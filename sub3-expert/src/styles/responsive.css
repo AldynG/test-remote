@@ -1,0 +1,89 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+    }
+   
+    .restaurant {
+      grid-template-columns: 1fr 1fr;
+    }
+   
+    .resto__info{
+      margin-left: 450px;
+      margin-top: -280px;
+    }
+  }
+   @media screen and (max-width : 650px){
+    .resto__info{
+      display: flex;
+      flex-direction: column;
+    }
+    .app-bar__menu button{
+      color: white;
+      min-height: 44px;
+      min-width: 44px;
+    }
+   }
+   @media screen and (max-width : 480px) {
+    .hero{
+      background-image: url('/src/public/heroImg/hero-image_4-small.jpg');
+    }
+   }
+   @media screen and (max-width : 800px) {
+    .hero{
+      background-image: url('/src/public/heroImg/hero-image_4-medium.jpg');
+    }
+   }
+   @media screen and (max-width : 1200px) {
+    .hero{
+      background-image: url('/src/public/heroImg/hero-image_4-large.jpg');
+    }
+   }
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+    }
+  }
+   
+  @media screen and (min-width: 850px) {
+    .restaurant{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .restaurant {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .restaurant {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
